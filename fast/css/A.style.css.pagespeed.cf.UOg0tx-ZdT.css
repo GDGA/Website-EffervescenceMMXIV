@@ -1,0 +1,302 @@
+
+
+
+
+.spons_div a{
+padding-left:28px;
+}
+
+
+
+div.spons-ring
+{
+width:300px;
+height:300px;
+bottom:-15px;
+right:-275px;
+border-radius:100%;
+-moz-border-radius:100%;
+-webkit-border-radius:100%;
+background:transparent;
+position:fixed;
+z-index:5;
+border:22px solid #F1F1F1;
+background:rgb(4,76,98);
+}
+
+div.spons-ring:before{
+	position: absolute; display: block; content: '';
+    border: 5px solid rgb(8,126,162);
+    height: 100%; width: 100%;
+    box-sizing: border-box;
+	-moz-box-sizing: border-box; 
+	-webkit-box-sizing: border-box;
+	border-radius:100%;
+}
+
+
+
+div.spons-ring-outer
+{
+width:317px;
+height:327px;
+bottom:-12px;
+right:-259px;
+border-radius:100%;
+-moz-border-radius:100%;
+-webkit-border-radius:100%;
+background:transparent;
+position:fixed;
+z-index:5;
+border:5px solid rgb(8,126,162);
+background-repeat:no-repeat;
+background-position:3px;
+-webkit-transform:rotate(0deg);
+}
+
+img.sponsors
+{
+margin-left:20px;
+margin-top:74px;
+width: 24px;
+height: 143px;
+}
+
+
+
+div.spons-box
+{
+border:1px solid rgb(4,76,98);
+width:250px;
+height:180px;
+position:fixed;
+bottom:65px;
+z-index:3;
+left:0px;
+background:#FFFFFF;
+border-right:20px solid rgb(8,126,162);
+}
+
+div.sponsrbox
+{
+border:1px solid rgb(4,76,98);
+width:20px;
+height:180px;
+position:absolute;
+bottom:160px;
+z-index:3;
+left:0px;
+background:#FFFFFF;
+border-left:20px solid rgb(8,126,162);
+z-index:5;
+}
+
+
+div.spons_div
+{
+position: absolute;
+padding-left:50px;
+padding-top:10px;
+}
+
+
+#spons_1{top:25px;left:-50px;width:190px;max-height:160px;}
+#spons_2 {top: 51px;left: -49px;width: 189px;}
+#spons_3 {top: 61px;left: -46px;width: 184px;}
+#spons_4{top:5px;left:-25px;width:150px;}
+#spons_5 {top: 61px;left: -46px;width: 184px;}
+#spons_6{top:40px;left:-45px;width:175px;}
+#spons_7{top:0px;left:-30px;width:150px;max-height:150px;}
+#spons_8{top:35px;width:180px;left:-45px;}
+#spons_9{top:45px;width:170px;left:-40px;}
+#spons_10 {top: 32px;width: 197px;left: -57px;}
+#spons_11{top:40px;left:-45px;width:180px;}
+#spons_12{top:35px;width:180px;left:-45px;}
+#spons_13{top:45px;left:-50px;width:180px;}
+#spons_14{top:5px;left:-40px;width:165px;}
+#spons_15{top:10px;left:-25px;width:140px;}
+
+
+div#ws_message{
+	position: absolute;
+	left: 70%;
+	font-size: 33px;
+	font-family: "armata";
+	font-weight: bold;
+	cursor: pointer;
+	z-index: 3;
+	color: rgb(238, 238, 238);
+	top: 35%;
+	text-shadow: 2px 2px 3px;
+}
+
+img.spons_slides
+{
+margin:0px auto;
+position: relative;
+top: 10px;
+left:-15px;
+display:none;
+width:130px;
+max-height: 160px;
+}
+
+
+.spons_logo{
+position:absolute;
+top:10px;
+left:160px;
+}
+
+div.content_spons
+{
+top:5%;
+float:right;
+}
+
+
+
+.sponsors *{
+margin:0;
+padding:0;
+font-family:'Roboto', sans-serif;
+vertical-align: middle;
+}
+/* To be removed */
+
+
+/* Sponsors page starts here */
+.sponsors{
+padding-top:25px;
+padding-left:15%;
+}
+.sponsorsTab{
+position: fixed;
+padding-top: 15px;
+padding-bottom: 10px;
+border-bottom: rgb(189, 189, 189) solid 5px;
+left: 18%;
+width: 1144px;
+background: rgba(236, 236, 236, 0.9);
+border-radius: 15px;
+text-align: center;
+}
+.sponsorsTab > a{
+margin:0 20px;
+color: rgb(0, 153, 255);
+cursor: pointer;
+}
+.sponsorsTab > a:hover{
+color: black;
+}
+.sponsorsTab > a.spons_visible{
+border-bottom: 3px #09f solid;
+color:black;
+}
+.sponsors > .sponsorsPage{
+display:none;
+}
+.sponsors > .sponsorsPage.spons_visible{
+display:block;
+}
+.sponsors > .sponsorsPage > .sponsorsBox{
+margin:30px 0;
+text-align:center;
+width:100%;
+}
+.sponsors > .sponsorsPage > .sponsorsBox > .sponsor > img{
+max-width:100%;
+max-height:100%;
+}
+.sponsors > .sponsorsPage > .sponsorsBox > .sponsor{
+width:260px;
+height:auto;
+margin:50px 70px;
+display:inline-block;
+}
+.sponsors > .sponsorsPage > .sponsorsBox > .sponsor.sponsorBig{
+width:150px;
+height:auto;
+}
+.sponsors > .sponsorsPage > .sponsorsBox > .sponsor.sponsorSpecial{
+width: 337px;
+height: auto;
+margin: 30px 50px;
+}
+.sponsors > .sponsorsPage > .sponsorsBox > h3{
+/*background-image:url(http://ktj.in/style/images/spons-portion-title.png);
+background-size:100% 100%;*/
+text-align:center;
+border:3px solid #0B7EA2;
+margin:10px auto;
+display:block;
+width:60%;
+/*color:white;*/
+border-top:0px;
+border-left:0px;
+border-right:0px;
+/*color:#0B7EA2;*/
+-webkit-border-image:-webkit-radial-gradient(50% 50%, circle, #0B7EA2, rgb(255, 255, 255)) 20 20 20 20;
+-moz-border-image:-moz-radial-gradient(50% 50%, circle, #0B7EA2, rgb(255, 255, 255)) 20 20 20 20;
+-o-border-image:-o-radial-gradient(50% 50%, circle, #0B7EA2, rgb(255, 255, 255)) 20 20 20 20;
+-ms-border-image:-ms-radial-gradient(50% 50%, circle, #0B7EA2, rgb(255, 255, 255)) 20 20 20 20;
+background-repeat: no-repeat;
+background-position: 50%;
+background-image: url('../newimages/118.html');
+color: white;
+background-size: 40% 98%;
+}
+
+/* Misc css */
+div.page{
+height:96%;
+overflow-y:scroll;
+overflow-x:hidden;
+}
+div#about{
+margin-left:20%;
+}
+#results_back{
+	display: none;
+	position: absolute;
+	/*height: 400px;
+	width: 500px;
+	top:100px;
+	left: 200px;
+	//background-color: red;
+	z-index: 9999999999;*/
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	z-index: 9999999;
+}
+
+
+    #inside_box {
+    position: relative;
+    width: 50%;
+    height: 50%;
+    background-color: darkcyan;
+    top: 20%;
+    color: rgb(255, 255, 255);
+    padding: 1%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    
+}
+#results_close{
+	width: 50px;
+background-color: #FFF;
+color: black;
+height: 50px;
+float: right;
+position: absolute;
+top: 0;
+right: 0;
+cursor: pointer;
+color: blueviolet;
+
+
+}

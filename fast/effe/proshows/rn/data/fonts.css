@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'pf_synch_proregular';
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html');
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html#iefix') format('embedded-opentype'),
+         url('fonts/pfsynchpro-regular-webfont.html') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_synch_promedium';
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html');
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html#iefix') format('embedded-opentype'),
+         url('fonts/pfsynchpro-medium-webfont.html') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_din_text_comp_proregular';
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html');
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html#iefix') format('embedded-opentype'),
+         url('fonts/pfdintextcomppro-regular-webfont.html') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'pf_din_text_cond_proregular';
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html');
+    src: url('http://www.engifest.dce.edu/data/fonts/404page.html#iefix') format('embedded-opentype'),
+         url('fonts/pfdintextcondpro-regular-webfont.html') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+

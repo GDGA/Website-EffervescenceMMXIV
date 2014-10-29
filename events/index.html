@@ -1,0 +1,152 @@
+<html>
+
+	<head>
+		<title>Events | Effervescence MM14</title>
+		<style type="text/css">
+			.event {
+
+				width: 20%;
+				margin: 1%;
+				padding: 1%;
+				height: 250px;
+				/*background: #ff5600;*/
+				float: left;
+				border-radius: 40px;
+				border: 0;
+				/* Chrome10+,Safari5.1+ */
+				background: -o-linear-gradient(top, rgba(115,187,223,1) 0%,rgba(23,86,127,1) 100%);
+				/* Opera 11.10+ */
+				background: -ms-linear-gradient(top, rgba(115,187,223,1) 0%,rgba(23,86,127,1) 100%);
+				/* IE10+ */
+				background: linear-gradient(to bottom, rgba(115,187,223,1) 0%,rgba(23,86,127,1) 100%);
+				/* W3C */
+				/*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#73bbe9', endColorstr='#17567f',GradientType=0 ); IE6-9 */
+				filter: none; /*IE6-9 */
+				-moz-box-shadow:
+				0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+				2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+				inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+				inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+				-webkit-box-shadow:
+				0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+				2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+				inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+				inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+				box-shadow:
+				0px -1px 3px rgba(190,255,255,0.5), /*top external highlight*/
+				2px 3px 3px rgba(0,0,0,0.2), /*bottom external shadow*/
+				inset 0 -1px 1px rgba(0,0,0,0.5), /*bottom internal shadow*/
+				inset 0 1px 1px rgba(255,255,255,1); /*top internal highlight*/
+				transition: border-radius 300ms ease-in-out 100ms;
+				-webkit-transition: border-radius 300ms ease-in-out 100ms;
+				-moz-transition: border-radius 300ms ease 100ms;
+			}
+			.event:hover {
+				border-radius: 100px;
+			}
+			.event_img {
+				height: 85%;
+				width: 85%;
+				border-radius: 40px;
+				position: relative;
+				left: -1%;
+				bottom: 1%;
+				transition: border-radius 300ms ease-in-out 100ms;
+				-webkit-transition: border-radius 300ms ease-in-out 100ms;
+				-moz-transition: border-radius 300ms ease 100ms;
+			}
+			.logo {
+				width: 190px;
+				height: auto;
+			}	
+			.event_img:hover {
+				border-radius: 100px;
+			}
+			.event_text {
+				text-align: center;
+				margin-top: -5%;
+				color: #fff;
+			}
+			.reg {
+				display:inline-block;
+				margin-bottom:0;
+				font-weight:normal;
+				text-align:center;
+				vertical-align:middle;
+				cursor:pointer;
+				background-image:none;
+				border:1px solid transparent;
+				white-space:nowrap;
+				
+				-webkit-user-select:none;
+				-moz-user-select:none;
+				-ms-user-select:none;
+				user-select:none;
+				position: absolute;
+				top: 7%;
+				right: 5%;
+				color:white;
+				background-color:#00425a;
+				border-color:#002f41;
+				padding:10px 16px;
+				font-size:18px;
+				line-height:1.33;
+				border-radius:6px;
+			}
+			.reg:hover, .reg:focus, .reg:active {
+				color:white;
+				background-color:#001d27;
+				border-color:#000203;
+				outline:thin dotted;
+				outline:5px auto -webkit-focus-ring-color;
+				outline-offset:-2px;
+			}
+		</style>
+	</head>
+
+	<body background = "bg.jpg">
+		<a href="http://effervescence.iiita.ac.in/register/?page=login" id="derf"><button class="reg">Register for events</button></a>
+		<div style="width: 100%; height: auto;">
+			<img src="logo.png" class="logo">
+			<a href="http://effervescence.iiita.ac.in"></a><img src="effe.png" style="width: 50%;position: absolute;left: 25%;">
+		</div>
+		<div style="width: 100%; height: auto; margin-top: 50px;">
+			<a href="konqueror/">
+				<div class="event">
+					<img src="images/kon.jpg" class="event_img">
+					<div class="event_text"><h2>Konquerer</h2></div>
+				</div>
+			</a>
+			<a href="platzen/">
+				<div class="event">
+					<img src="images/pla.jpg" class="event_img">
+					<div class="event_text"><h2>Platzen</h2></div>
+				</div>
+			</a>
+			<a href="#">
+				<div class="event">
+					<img src="images/per.png" class="event_img">
+					<div class="event_text"><h2>Perplexus</h2></div>
+				</div>
+			</a>
+			<a href="stegolica/">
+				<div class="event">
+					<img src="images/ste.jpg" class="event_img">
+					<div class="event_text" ><h2>Stegolica</h2></div>
+				</div>
+			</a>
+		</div>
+	</body>
+	<script type="text/javascript">
+		var xxx = document.getElementsByTagName("a");
+		var num = xxx.length;
+		for (var i = 0;  i < num; i++) {
+				if (i != 2 && i != 3 && i != 5) {
+					xxx[i].setAttribute("onClick", "alert('The link will be enabled when the event starts. Thank You')");
+				}
+				if (i == 4)
+					xxx[i].setAttribute("onClick", "alert('Event finished. Thank You')");
+		}
+		document.getElementById("derf").setAttribute("onClick", "");;
+	</script>
+</html>

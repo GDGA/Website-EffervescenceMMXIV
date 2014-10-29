@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Simple Fade Slideshow Theme - Jssor Slider, Slideshow with Javascript Source Code</title>
+    <style type="text/css">
+        img {
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body style="font-family:Arial, Verdana;background-color:#fff;overflow:hidden;">
+    
+    <div id="slider1_container" style="position: relative; top: 0px; left: 0px; width: 600px; height: 300px; overflow: hidden; ">
+
+        
+
+        <!-- Slides Container -->
+        <div u="slides" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 600px; height: 300px; overflow: hidden;">
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/airtel.jpg" />
+            </div>
+            
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/line.png" />
+            </div>
+            
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/ebay.png" />
+            </div>
+            
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/eccentric.jpg" />
+            </div>
+			
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/friends.jpg" />
+            </div>
+			
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/hotbitz.jpg" />
+            </div>
+			<div>
+                <img width="600px" height="300px" u="image" src="../img/iob.jpg" />
+            </div>
+            
+			<div>
+                <img width="600px" height="300px" u="image" src="../img/karv.jpg" />
+            </div>
+            
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/redz.jpg" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/sagar.jpg" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/scientech.jpg" />
+            </div>
+			<div>
+                <img width="600px" height="300px" u="image" src="../img/vijaya.jpg" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/domino.png" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/eisys.png" />
+            </div>
+			<div>
+                <img width="600px" height="300px" u="image" src="../img/hi.png" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/indiareads.png" />
+            </div><div>
+                <img width="600px" height="300px" u="image" src="../img/maya.png" />
+            </div>
+            <div>
+                <img width="600px" height="300px" u="image" src="../img/nwlog.png" />
+            </div>
+			<div>
+                <img width="600px" height="300px" u="image" src="../img/ojas.png" />
+            </div>
+            <div>
+                <img  width="600px" height="300px"u="image" src="../img/peta.png" />
+            </div>
+
+        </div>
+
+       <!-- use jssor.slider.min.js instead for release -->
+    <!-- jssor.slider.min.js = (jssor.core.js + jssor.utils.js + jssor.slider.js) -->
+    <script type="text/javascript" src="../js/jssor.core.js"></script>
+    <script type="text/javascript" src="../js/jssor.utils.js"></script>
+    <script type="text/javascript" src="../js/jssor.slider.js"></script>
+    <script>
+
+        jssor_slider1_starter = function (containerId) {
+
+            var _SlideshowTransitions = [
+            //Fade
+            { $Duration: 300, $Opacity: 2 }
+            ];
+
+            var options = {
+                $AutoPlay: true,                                    //[Optional] Whether to auto play, to enable slideshow, this option must be set to true, default value is false
+                $AutoPlaySteps: 1,                                  //[Optional] Steps to go for each navigation request (this options applys only when slideshow disabled), the default value is 1
+                $AutoPlayInterval: 300,                            //[Optional] Interval (in milliseconds) to go for next slide since the previous stopped if the slider is auto playing, default value is 3000
+                $PauseOnHover: 1,                               //[Optional] Whether to pause when mouse over if a slider is auto playing, 0 no pause, 1 pause for desktop, 2 pause for touch device, 3 pause for desktop and touch device, 4 freeze for desktop, 8 freeze for touch device, 12 freeze for desktop and touch device, default value is 1
+
+                
+                $SlideshowOptions: {                                //[Optional] Options to specify and enable slideshow or not
+                    $Class: $JssorSlideshowRunner$,                 //[Required] Class to create instance of slideshow
+                    $Transitions: _SlideshowTransitions,            //[Required] An array of slideshow transitions to play slideshow
+                    $TransitionsOrder: 1,                           //[Optional] The way to choose transition to play slide, 1 Sequence, 0 Random
+                    $ShowLink: true                                    //[Optional] Whether to bring slide link on top of the slider when slideshow is running, default value is false
+                },
+
+                
+            };
+            var jssor_slider1 = new $JssorSlider$(containerId, options);
+
+            //responsive code begin
+            //you can remove responsive code if you don't want the slider scales while window resizes
+            function ScaleSlider() {
+                var parentWidth = jssor_slider1.$Elmt.parentNode.clientWidth;
+                if (parentWidth)
+                    jssor_slider1.$SetScaleWidth(Math.min(parentWidth, 600));
+                else
+                    $JssorUtils$.$Delay(ScaleSlider, 30);
+            }
+
+            ScaleSlider();
+            $JssorUtils$.$AddEvent(window, "load", ScaleSlider);
+
+
+            if (!navigator.userAgent.match(/(iPhone|iPod|iPad|BlackBerry|IEMobile)/)) {
+                $JssorUtils$.$OnWindowResize(window, ScaleSlider);
+            }
+
+            //if (navigator.userAgent.match(/(iPhone|iPod|iPad)/)) {
+            //    $JssorUtils$.$AddEvent(window, "orientationchange", ScaleSlider);
+            //}
+            //responsive code end
+        };
+    </script>
+    
+        <!-- Trigger -->
+        <script>
+            jssor_slider1_starter('slider1_container');
+        </script>
+
+    </div>
+    <!-- Jssor Slider End -->
+</body>
+</html>
