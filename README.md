@@ -16,4 +16,4 @@ Developers
 
 * [Ankit Mund](mailto:Iit2013169@iiita.ac.in) - Front end implementation.
 
-[Link](http://effervescence.iiita.ac.in/past-14) 
+[Effervescence 2014](https://effervescence.iiita.ac.in/past-14) 
