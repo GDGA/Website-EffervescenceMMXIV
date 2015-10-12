@@ -12,8 +12,8 @@ Developers
 
 * [Pratyush Vashishat](mailto:pratyush.vashishat@gmail.com) - Front end implementation.
 
-* [Saptak Sengupta](mailto:Iit2013193@iiita.ac.in) - Front end implementation.
+* [Saptak Sengupta](https://github.com/SaptakS) - Front end implementation.
 
 * [Ankit Mund](mailto:Iit2013169@iiita.ac.in) - Front end implementation.
 
-[Link](http://effervescence.iiita.ac.in/) 
+[Link](http://effervescence.iiita.ac.in/past-14) 
